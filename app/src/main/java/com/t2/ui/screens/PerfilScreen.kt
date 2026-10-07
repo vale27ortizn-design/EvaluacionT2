@@ -26,7 +26,6 @@ fun PerfilScreen(
     val sessionManager = remember { SessionManager(context) }
     val preferences = context.getSharedPreferences("dami_t2", android.content.Context.MODE_PRIVATE)
 
-    // Recuperamos TODOS los datos guardados en el formulario de registro
     val nombres = preferences.getString("nombres", "Usuario") ?: ""
     val apPaterno = preferences.getString("apPaterno", "") ?: ""
     val apMaterno = preferences.getString("apMaterno", "") ?: ""
